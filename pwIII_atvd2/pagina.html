@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssstyle.css">
+    <title>Atividade avaliativa</title>
+</head>
+
+<body>
+    <form action="Form_calculo">
+
+        <div class="section1">
+            <center>
+
+                <header>
+                    <h1>
+                        Calcular números
+                    </h1>
+                </header>
+
+                <br> <br>
+
+                <section>
+
+                    <div class="texto">
+
+                        <label for="number1">Primeiro número:</label> <br>
+                        <input type="number" id="n1" placeholder="Digite um número" name="number1">
+                        <br> <br>
+
+                        <label for="number2">Segundo número:</label> <br>
+                        <input type="number" id="n2" placeholder="Digite um número" name="number2">
+                        <br> <br>
+
+                        <label for="number3">Terceiro número:</label> <br>
+                        <input type="number" id="n3" placeholder="Digite um número" name="number3">
+                        <br> <br>
+
+                        <label for="number4">Quarto número:</label> <br>
+                        <input type="number" id="n4" placeholder="Digite um número" name="number4">
+                        <br> <br> <br>
+
+                        <button type="button" onclick="calculo()">Calcular</button> <br>
+
+
+
+
+                        <script>
+
+
+
+                            function calculo() {
+
+                                let nu1 = document.getElementById("n1").value
+                                let nu2 = document.getElementById("n2").value
+                                let nu3 = document.getElementById("n3").value
+                                let nu4 = document.getElementById("n4").value
+
+                                d1 = nu1 * 2
+                                document.getElementById("resultado").innerHTML = (`O dobro do seu primeiro número é: ${d1}`);
+
+                                tr = nu1 * 3
+                                document.getElementById("resultado1").innerHTML = (`O triplo do seu primeiro número é: ${tr}`);
+
+                                qr = nu1 * 4
+                                document.getElementById("resultado2").innerHTML = (`O quadruplo do seu primeiro número é: ${qr}`);
+
+                                qu = nu1 * 5
+                                document.getElementById("resultado3").innerHTML = (`O quintúplo do seu primeiro número é: ${qu}`);
+
+                                se = nu1 * 6
+                                document.getElementById("resultado4").innerHTML = (`O sextuplo do seu primeiro número é: ${se}`);
+
+                                qua = nu1 * nu1
+                                document.getElementById("resultado5").innerHTML = (`Seu primeiro número elevado ao quadrado é: ${qua}`);
+
+                                cb = nu1 * nu1 * nu1
+                                document.getElementById("resultado6").innerHTML = (`Seu primeiro número elevado ao cubo é: ${cb}`);
+
+                                qrt = nu1 * nu1 * nu1 * nu1
+                                document.getElementById("resultado7").innerHTML = (`Seu primeiro número elevado à quarta potência é: ${qrt}`);
+
+                                quint = nu1 * nu1 * nu1 * nu1 * nu1
+                                document.getElementById("resultado8").innerHTML = (`Seu primeiro número elevado à quinta potência é: ${quint}`);
+
+                                sext = nu1 * nu1 * nu1 * nu1 * nu1 * nu1
+                                document.getElementById("resultado9").innerHTML = (`Seu primeiro número elevado à sexta potência é: ${sext}`);
+
+                                delta = (nu2 * nu2) - 4 * nu3 * nu1
+
+                                del = delta / delta
+
+                                bh1 = (nu2 * (- 1) + del) / 2 * nu1
+
+                                bh2 = (nu2 * (- 1) - del) / 2 * nu1
+
+                                document.getElementById("resultado10").innerHTML = (`As duas raízes geradas a partir dos três primeiros números na fórmula de Bhaskara são: ${bh1} e ${bh2}`);
+
+                                soma = (Number(nu1) + Number(nu2) + Number(nu3) + Number(nu4)) / 4;
+
+                                document.getElementById("resultado11").innerHTML = (`A média aritmética dos 4 números é: ${soma}`);
+
+                                if (nu1 % 2 == 0) {
+                                    document.getElementById("resultado12").innerHTML = (`O primeiro número é: par`);
+                                }
+
+                                if (nu1 % 2 == 1) {
+                                    document.getElementById("resultado12").innerHTML = (`O primeiro número é: ímpar`);
+                                }
+
+                            }
+
+                        </script>
+
+                        <table>
+                            <div class="table">
+
+                                <p id="resultado">Seu resultado aqui!</p>
+
+                                <p id="resultado1"> </p>
+
+                                <p id="resultado2"> </p>
+
+                                <p id="resultado3"> </p>
+
+                                <p id="resultado4"> </p>
+
+                                <p id="resultado5"> </p>
+
+                                <p id="resultado6"> </p>
+
+                                <p id="resultado7"> </p>
+
+                                <p id="resultado8"> </p>
+
+                                <p id="resultado9"> </p>
+
+                                <p id="resultado10"> </p>
+
+                                <p id="resultado11"> </p>
+
+                                <p id="resultado12"> </p>
+
+                            </div>
+                        </table>
+
+
+                </section>
+            </center>
+
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+body {
+    background-color:rgb(231, 184, 184);
+}
+
+h1 {
+    color:rgb(165, 78, 78);
+    font-family: 'Times New Roman';
+}
+
+.texto {
+    color: rgb(142, 73, 73);
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}
+
+div {
+    align-items: center;
+    align-content: center;
+}
+
+header {
+    background-color:rgb(233, 196, 196);
+    width: auto;
+    padding: 5px;
+}
+
+input {
+    background-color:rgb(249, 224, 224);
+    border-color:rgb(255, 212, 212) ;
+    width: 200px;
+    height: 25px;
+}
+
+.table {
+    background-color:rgb(233, 196, 196);
+    margin: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:rgb(81, 38, 45);
+}
+
+button {
+    background-color: rgb(255, 212, 212);
+    border-color:rgb(255, 212, 212) ;
+    border-radius: 15px;
+    width: 200px;
+    height: 35px;
+    color: rgb(173, 80, 94);
+    box-shadow:rgb(81, 38, 45);
+}
