@@ -60,7 +60,8 @@ values
 	id_usuario int primary key auto_increment,
     nome varchar(150) not null,
     senha varchar(250) not null,
-    email varchar(150) not null,
+    email varchar(150) not null unique,
+    usuario varchar(150) not null unique,
     tentativas int default 0
 );
 
