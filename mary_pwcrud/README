@@ -1,0 +1,16 @@
+#Nome do projeto
+
+Crud_Mundo
+
+#Sobre
+
+O projeto busca realizar um crud que atenda aos requisitos propostos pelo professor da disciplina de PW III, visando editar, excluir, criar e deletar dados.
+
+- Tecnologias utilizadas: 
+-- PHP
+-- HTML
+-- CSS
+-- MySql
+
+- Funcionalidades:
+-- Crud semi completo
